@@ -1,0 +1,17 @@
+[
+    {
+        "eventId" : 1,
+        "eventName": "Birthday",
+        "eventDate": "1/11/2021, 1:57:09 AM"
+    },
+    {
+        "eventId" : 2,
+        "eventName": "Christmas Day!",
+        "eventDate": "12/25/2020, 5:59:09 PM"
+    },
+    {
+        "eventId" : 3,
+        "eventName": "New Years Day!",
+        "eventDate": "1/1/2021, 12:00:00 AM"
+    }
+]
