@@ -1,0 +1,127 @@
+.event--section{
+    padding: 45px;
+    .total {
+        .count, .none {
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+        .count {
+            color: rgb(4, 189, 29);
+        }
+    }
+    .event--picker, .table {
+        border: solid .5px black;
+    }
+
+    .none,.error-mesage, .delete
+    {
+        color: red;
+    }
+    
+    .event--picker{
+        display: flex;
+        padding: 35px 95px;
+        margin: 15px 0;
+        .button {
+            margin-left: 15px;
+            width: 105px;
+            &::before {
+                content: "+";
+                margin-right: 5px;
+            }
+
+            &:disabled{
+                cursor: not-allowed;
+            }
+        }
+        .error-mesage {
+            position: absolute;
+            top: 11rem;
+            right: 36rem;
+        }
+    }
+
+    .schedule-fields, .button {
+        margin: 12px 0;
+        padding: 9px 12px;
+        width: 210px;
+    }
+
+    .event--list {
+        .event--filters{
+            margin-bottom: 15px;
+        }
+        .table {
+            width: 100%;
+            display: grid;
+            padding: 15px 30px;
+            td,th{
+                width: 360px;
+                max-width: 360px;
+                word-break: break-all;
+                text-align: center;
+            }
+            tbody{
+                max-height: 150px;
+                overflow: hidden auto;
+
+                tr{
+                    margin-top: 3px;
+                    margin-bottom: 3px;
+                    &:hover{
+                        background: #f4f4f4;
+                    }
+                    .no-events{
+                        font-style: italic;
+                        text-align: center;
+                        padding: 25px 5px;
+                        margin: 20px 0;
+                        background: #f4f4f4;
+                        display: inline-block;
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+                &::-webkit-scrollbar {
+                    width: 12px;              
+                }
+                
+                &::-webkit-scrollbar-track {
+                    background: #f4f4f4;        
+                }
+                
+                &::-webkit-scrollbar-thumb {
+                    background-color: #216ba5;   
+                    border-radius: 20px;       
+                    border: 3px solid #f4f4f4;  
+                }
+            }
+        }
+
+        .delete{
+            &:hover{
+                color: rgb(192, 107, 107)
+            }
+        }
+
+        .undo {
+            float: right;
+            .button{
+                margin-right: 5px;
+                padding: 8px;
+                width: 150px;
+            }
+        }
+
+        .total, .undo, .no-events-wrapper {
+            display: inline;
+        }
+
+        .sort-field, .delete, .button {
+            cursor: pointer;
+        }
+
+        
+    }
+}
